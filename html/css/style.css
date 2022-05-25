@@ -766,3 +766,13 @@ footer {
         flex-direction: column;
     }
 }
+
+@media (max-width: 900px) {
+    header {
+        background-position: bottom;
+    }
+
+    .bg-section {
+        padding: 0 .25em 4em .25em;
+    }
+}
