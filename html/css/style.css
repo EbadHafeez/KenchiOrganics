@@ -78,7 +78,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 66px);
     overflow: hidden;
 }
 
@@ -767,7 +767,7 @@ footer {
     }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     header {
         background-position: bottom;
     }
@@ -775,4 +775,4 @@ footer {
     .bg-section {
         padding: 0 .25em 4em .25em;
     }
-}
+} */
