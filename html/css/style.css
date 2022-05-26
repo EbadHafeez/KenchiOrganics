@@ -88,10 +88,9 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* height: calc(100vh - 100px); */
     height: calc(var(--viewport-height) - 100px);
-    /* max-height: -webkit-fill-available; */
     overflow: hidden;
+    padding: 0 .25em 3em .25em;
 }
 
 .bg-headings {
@@ -669,15 +668,15 @@ footer {
     /* about */
 
     #about-left-side {
-        padding: 0 1.2em
+        padding: 0 1em
     }
 
     #about-left-side p {
-        font-size: calc((2vh + 1.6vw)/1.55);
+        font-size: calc((2vh + 1.6vw)/1.54);
     }
 
     #about-right-side {
-        padding: 0 1.2em;
+        padding: 0 1em;
         margin-top: 2.5em;
     }
 
@@ -700,12 +699,12 @@ footer {
     }
 
     #hairoil-left-side {
-        padding: 0 1.2em;
+        padding: 0 1em;
         margin-top: 2.5em;
     }
 
     #hairoil-right-side p {
-        font-size: calc((2vh + 1.6vw)/1.55);
+        font-size: calc((2vh + 1.6vw)/1.54);
     }
 
     /* cream */
@@ -715,12 +714,12 @@ footer {
     }
 
     #cream-right-side {
-        padding: 0 1.2em;
+        padding: 0 1em;
         margin-top: 2.5em;
     }
 
     #cream-left-side p {
-        font-size: calc((2vh + 1.6vw)/1.55);
+        font-size: calc((2vh + 1.6vw)/1.54);
     }
 
     /* Contact */
