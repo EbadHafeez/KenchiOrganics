@@ -7,8 +7,13 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    height: 100%;
 }
 
 p {
@@ -79,6 +84,8 @@ header {
     justify-content: center;
     flex-direction: column;
     height: calc(100vh - 100px);
+    /* height: 100%; */
+    max-height: -webkit-fill-available;
     overflow: hidden;
 }
 
