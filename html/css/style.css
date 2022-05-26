@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --viewport-height: 100%;
+}
+
 html {
     height: 100%;
 }
@@ -84,10 +88,9 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 100px);
-    height: calc(100% - 100px);
-    /* height: 100%; */
-    max-height: -webkit-fill-available;
+    /* height: calc(100vh - 100px); */
+    height: calc(var(--viewport-height) - 100px);
+    /* max-height: -webkit-fill-available; */
     overflow: hidden;
 }
 
