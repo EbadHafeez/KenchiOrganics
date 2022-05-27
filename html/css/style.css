@@ -451,10 +451,11 @@ header {
 }
 
 .contact-form .contact-left-side input {
-    padding-bottom: .1em;
-    background: transparent;
+    padding: .5em .5em;
+    /* background: transparent; */
     border: none;
-    border-bottom: 1px solid black;
+    border-radius: 3px;
+    /* border: 1px solid rgba(66, 66, 66, 0.671); */
     outline: none;
 }
 
@@ -463,6 +464,8 @@ header {
     background-color: palevioletred;
     color: white;
     margin: .2em 0;
+    border: none;
+    border-radius: 3px;
 }
 
 .contact-form form {
@@ -474,7 +477,7 @@ header {
 }
 
 .input-box {
-    margin: .5em 0 3em 0;
+    margin: .5em 0 2em 0;
 }
 
 .input-box input {
@@ -483,13 +486,15 @@ header {
 }
 
 .input-box input::placeholder {
-    color: #4b4b4b;
+    color: #0000009c;
 }
 
 .text-box textarea {
     color: pink;
-    padding: 1.5em;
+    padding: .75em;
     width: 90%;
+    border: none;
+    border-radius: 3px;
 }
 
 .text-box textarea::placeholder {
@@ -778,6 +783,12 @@ footer {
         font-size: calc((1.7vh + 1.3vw)/1)
     }
 
+    .contact-form h2 {
+        padding: 1em 0 0 0;
+        text-align: center;
+        margin: 0 0 .2em 0;
+    }
+
     .contact-form-main {
         padding: 0 1.5em 2em;
     }
@@ -795,7 +806,7 @@ footer {
 
     .input-box input {
         width: calc(100%);
-        margin: 1.25em 0;
+        margin: 1em 0;
     }
 
     .text-box textarea {
