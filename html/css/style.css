@@ -99,14 +99,12 @@ header {
 
 .bg-headings h1 {
     color: white;
-    /* font-size: 2.5vw; */
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
 .bg-headings h3 {
-    color: white;
-    /* font-size: 2.5vw; */
+    color: rgba(255, 255, 255, 0.6);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
@@ -751,6 +749,24 @@ footer {
 }
 
 @media (max-width:478px) {
+
+    .bg-section {
+        padding: 0 .5em 3em .5em;
+    }
+
+    .bg-headings {
+        width: 100%;
+    }
+
+    .bg-headings h1 {
+        font-size: calc(2.9vh + 1.5vw);
+        /* width: 100%; */
+    }
+
+    .bg-headings h3 {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: calc((1.7vh + 1.3vw)/1)
+    }
 
     .contact-form-main {
         padding: 0 1.5em 2em;
