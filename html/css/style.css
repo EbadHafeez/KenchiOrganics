@@ -421,6 +421,7 @@ header {
 }
 
 .section-contact-heading h1 {
+    text-align: center;
     margin-top: 2em;
 }
 
@@ -559,6 +560,15 @@ footer {
 }
 
 @media (max-width:980px) {
+    .navbar-light .navbar-toggler {
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
     .contact-form {
         display: block;
     }
@@ -659,7 +669,7 @@ footer {
     }
 
     .bg-section {
-        padding: 0 .25em 3em .25em;
+        padding: 0 .25em 3.5em .25em;
     }
 
     .content-heading-border {
@@ -759,7 +769,7 @@ footer {
     }
 
     .bg-headings h1 {
-        font-size: calc(2.9vh + 1.5vw);
+        font-size: calc(3vh + 1.6vw);
         /* width: 100%; */
     }
 
@@ -796,4 +806,97 @@ footer {
         font-size: 14px;
         flex-direction: column;
     }
+
+    #copyright {
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar {
+        padding: 1em 1.5em;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .about-content button,
+    #cream-left-side button,
+    #hairoil-right-side button,
+    .contact-form .contact-left-side button,
+    .bg-headings button {
+        font-size: calc((1.9vh + 1.6vw)/1.35);
+    }
+
+    .navbar {
+        padding: 1em 1em;
+        font-size: calc((1.8vh + 1.6vw)/1.5);
+    }
+
+    nav img {
+        width: 71px !important;
+        height: 51px !important;
+    }
+
+    .navbar-toggler {
+        padding: 0.25em 0.55em;
+        font-size: 1rem;
+    }
+
+    .bg-headings h1 {
+        font-size: calc(3.5vh + 1.8vw);
+    }
+
+    .bg-headings h3 {
+        font-size: calc(1.9vh + 1.3vw)
+    }
+
+    .about {
+        padding: 2em 0;
+    }
+
+    #about-left-side h2 {
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    #about-left-side p {
+        font-size: calc((2vh + 1.6vw)/1.3);
+    }
+
+    #hairoil-left-side {
+        padding: 0 .4em;
+    }
+
+    #hairoil-right-side {
+        padding: 0 1em;
+    }
+
+    #hairoil-right-side h2 {
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    #hairoil-right-side p {
+        font-size: calc((2vh + 1.6vw)/1.3);
+    }
+
+    #cream-left-side {
+        padding: 0 1em;
+    }
+
+    #cream-right-side {
+        padding: 0 .4em;
+    }
+
+    #cream-left-side h2 {
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    #cream-left-side p {
+        font-size: calc((2vh + 1.6vw)/1.3);
+    }
+
+    .contact-form-main {
+        padding: 0px 1em 2em;
+    }
+
 }
