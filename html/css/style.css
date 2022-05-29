@@ -52,7 +52,6 @@ header {
     background-color: rgba(0, 0, 0, 0.438) !important;
     padding: 1em 5em;
     border: none !important;
-    z-index: 10 !important;
     /* height: 100px; */
 }
 
