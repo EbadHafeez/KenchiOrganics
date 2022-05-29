@@ -9,7 +9,8 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="./html/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -29,17 +30,21 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="./html/about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="./html/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cart-li" href="./html/checkout.html">Cart</a>
                         </li>
                     </ul>
                     <div class="right-nav">
                         <ul class="navbar-nav">
+                            <a target="_blank" href="./html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                             <li>
                                 <a href="#contact"><button type="button" class="btn px-4 py-2">Book Now</button></a>
                             </li>
@@ -102,7 +107,8 @@
                             ligula.
                             Aliquam blandit rhoncus arcu.Pellentesque maximus at dui et tempus. Nam tincidunt pulvinar
                             augue, vel finibus ligula.Aliquam blandit rhoncus arcu.</p>
-                        <button type="button" class="btn">Try our Product</button>
+                        <a href="./html/checkout.html"><button type="button" class="btn">Try our Product <span
+                                    id="cart-hover"><i class="fa-solid fa-cart-arrow-down"></i></span></button></a>
                     </div>
                 </div>
             </div>
@@ -127,7 +133,8 @@
                             ligula.
                             Aliquam blandit rhoncus arcu.Pellentesque maximus at dui et tempus. Nam tincidunt pulvinar
                             augue, vel finibus ligula.Aliquam blandit rhoncus arcu.</p>
-                        <button type="button" class="btn">Buy this product</button>
+                        <a href="./html/checkout.html"><button type="button" class="btn">Buy this product <span
+                                    id="cart-hover"><i class="fa-solid fa-cart-arrow-down"></i></span></button></a>
                     </div>
                 </div>
             </div>
@@ -137,7 +144,7 @@
                 <h1>Make an Appointment</h1>
                 <div class="sec-headings-border"></div>
             </div>
-            <div class="contact-form-main">
+            <div class="contact-form-main" data-aos="zoom-in">
                 <div class="contact-form">
                     <div class="contact-left-side">
                         <h2>Contact Form</h2>

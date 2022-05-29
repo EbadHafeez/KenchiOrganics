@@ -50,9 +50,10 @@ header {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.438) !important;
-    /* font-size: 1.05vw; */
     padding: 1em 5em;
-    height: 100px;
+    border: none !important;
+    z-index: 10 !important;
+    /* height: 100px; */
 }
 
 #navbarNav {
@@ -65,6 +66,22 @@ header {
     color: white !important;
 
 }
+
+.right-nav .navbar-nav {
+    align-items: center;
+}
+
+.right-nav .navbar-nav i {
+    font-size: 23px;
+    margin-right: 1em;
+    color: white;
+    transition: .2s;
+}
+
+.right-nav .navbar-nav i:hover {
+    transform: scale(1.2);
+}
+
 
 .right-nav button {
     background-color: rgb(216, 95, 135);
@@ -82,13 +99,17 @@ header {
     transform: scale(1.1);
 }
 
+#cart-li {
+    display: none;
+}
+
 .bg-section {
     background-color: rgba(0, 0, 0, 0.438);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(var(--viewport-height) - 100px);
+    height: calc(var(--viewport-height) - 97px);
     overflow: hidden;
 }
 
@@ -110,7 +131,6 @@ header {
 }
 
 .bg-headings button {
-    /* font-size: 20px; */
     font-size: calc((1.3vh + 1.5vw)/2);
     margin-top: 2em;
     background-color: rgb(216, 95, 135);
@@ -118,8 +138,6 @@ header {
     font-weight: 500;
     border: none;
     border-radius: 5px;
-    /* height: 2.8vw;
-    width: 8.5vw; */
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.226);
     transition: .2s;
 }
@@ -146,7 +164,6 @@ header {
 }
 
 .section-about-heading h1 {
-    /* font-size: 2.25vw; */
     margin-top: 1em;
 }
 
@@ -198,7 +215,6 @@ header {
 /* //IMPORTANT */
 #about-left-side p {
     font-size: calc((1.6vh + 1.8vw)/2);
-    /* font-size: 4vw; */
     margin-bottom: 3em;
 }
 
@@ -249,7 +265,6 @@ header {
 }
 
 .section-hair-heading h1 {
-    /* font-size: 2.25vw; */
     margin-top: 2em;
 }
 
@@ -293,13 +308,10 @@ header {
 }
 
 #hairoil-right-side h2 {
-    /* font-size: 2.2vw; */
     font-weight: 600;
-    /* margin-bottom: 1.5em; */
 }
 
 #hairoil-right-side p {
-    /* font-size: 19px; */
     font-size: calc((1.6vh + 1.8vw)/2);
     margin-bottom: 3em;
 }
@@ -308,22 +320,21 @@ header {
     border-radius: 200px;
     background-color: rgb(216, 95, 135);
     color: white;
-    /* height: 45px;
-    width: 180px; */
     align-self: flex-start;
     text-align: center;
     padding: .5em 1.2em;
     font-size: calc((1.3vh + 1.5vw)/2);
-    /* font-size: 1.05vw; */
-    /* font-size: calc((1.6vh + 1.8vw)/2); */
 }
 
-#hairoil-right-side button:hover::after {
-    content: ' \2192';
+#cart-hover {
+    display: none;
+}
+
+#hairoil-right-side button:hover #cart-hover {
+    display: inline;
 }
 
 /* Cream */
-
 
 .section-cream-heading {
     color: white;
@@ -335,7 +346,6 @@ header {
 }
 
 .section-cream-heading h1 {
-    /* font-size: 2.25vw; */
     margin-top: 2em;
 }
 
@@ -380,13 +390,10 @@ header {
 }
 
 #cream-left-side h2 {
-    /* font-size: 2.2vw; */
     font-weight: 600;
-    /* margin-bottom: 1.5em; */
 }
 
 #cream-left-side p {
-    /* font-size: 19px; */
     font-size: calc((1.6vh + 1.8vw)/2);
     margin-bottom: 3em;
 }
@@ -395,18 +402,14 @@ header {
     border-radius: 200px;
     background-color: rgb(216, 95, 135);
     color: white;
-    /* height: 45px;
-    width: 180px; */
     align-self: flex-start;
     text-align: center;
     padding: .5em 1.2em;
     font-size: calc((1.3vh + 1.5vw)/2);
-    /* font-size: 1.05vw; */
-    /* font-size: calc((1.6vh + 1.8vw)/2); */
 }
 
-#cream-left-side button:hover::after {
-    content: ' \2192';
+#cream-left-side button:hover #cart-hover {
+    display: inline;
 }
 
 
@@ -434,9 +437,7 @@ header {
 }
 
 .contact-form {
-    /* background-color: pink; */
     padding: 2em 2em;
-    /* border: 8px solid palevioletred; */
     display: flex;
 }
 
@@ -452,10 +453,8 @@ header {
 
 .contact-form .contact-left-side input {
     padding: .5em .5em;
-    /* background: transparent; */
     border: none;
     border-radius: 3px;
-    /* border: 1px solid rgba(66, 66, 66, 0.671); */
     outline: none;
 }
 
@@ -466,12 +465,15 @@ header {
     margin: .2em 0;
     border: none;
     border-radius: 3px;
+    transition: .2s;
+}
+
+.contact-form .contact-left-side button:hover {
+    transform: scale(1.1);
 }
 
 .contact-form form {
     padding: 0 0 1.2em 2em;
-    /* text-align: center; */
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -490,7 +492,7 @@ header {
 }
 
 .text-box textarea {
-    color: pink;
+    color: palevioletred;
     padding: .75em;
     width: 90%;
     border: none;
@@ -503,7 +505,6 @@ header {
 }
 
 .contact-form .contact-right-side {
-    /* padding: 0 .5em; */
     flex-basis: 40%;
 }
 
@@ -574,8 +575,16 @@ footer {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
-    .right-nav {
+    .bg-section {
+        height: calc(var(--viewport-height) - 90px);
+    }
+
+    .right-nav .navbar-nav {
         display: none;
+    }
+
+    #cart-li {
+        display: block;
     }
 
     .contact-form {
@@ -650,7 +659,6 @@ footer {
 
     #cream-left-side p {
         font-size: calc((1.6vh + 1.8vw)/2);
-        /* font-size: 1.5vh; */
         margin-bottom: 2em;
     }
 
@@ -766,6 +774,10 @@ footer {
 @media (max-width:478px) {
 
     .bg-section {
+        height: calc(var(--viewport-height) - 85px);
+    }
+
+    .bg-section {
         padding: 0 .5em 3em .5em;
     }
 
@@ -775,7 +787,6 @@ footer {
 
     .bg-headings h1 {
         font-size: calc(3vh + 1.6vw);
-        /* width: 100%; */
     }
 
     .bg-headings h3 {
@@ -826,6 +837,30 @@ footer {
 @media (max-width:400px) {
     .navbar {
         padding: 1em 1.5em;
+    }
+
+    .about {
+        padding: 2em .5em;
+    }
+
+    #about-right-side {
+        padding: 0 .75em;
+    }
+
+    #hairoil-right-side {
+        padding: 0 1.25em;
+    }
+
+    #hairoil-left-side {
+        padding: 0 0.5em;
+    }
+
+    #cream-left-side {
+        padding: 1.25em;
+    }
+
+    #cream-right-side {
+        padding: 0 0.5em;
     }
 }
 
