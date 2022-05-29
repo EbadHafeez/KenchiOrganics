@@ -8,6 +8,7 @@
 }
 
 :root {
+    color-scheme: only light;
     --viewport-height: 100%;
 }
 
